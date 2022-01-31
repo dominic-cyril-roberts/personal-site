@@ -1,94 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DCR</title>
 
+    <script>
+        const model = {
+            header: {
+                logo: "Dominic Cyril Roberts",
+                banner: {
+                    "background-image": '',
+                    "banner-text": 'The Incredible, Credible Man!'
+                },
+            },
+
+            projects: {
+                "built": [],
+                "building": [
+                    {
+                        title: 'personal-site',
+                        description: 'You\'re looking at it! I use this site to play with different technologies/practice css. I keep different versions in github for reference.',
+                        image: '',
+                        link: 'https://dcr-tryme.net',
+                        github: 'https://github.com/dominic-cyril-roberts/personal-site',
+                    },
+                    {
+                        title: 'checklist',
+                        description: 'The note taking app I always wanted (low-key obsidian has already made this at this point it`\s kind of an exercise for me)',
+                        image: '',
+                        link: 'https://dcr-tryme.net',
+                        github: 'https://github.com/dominic-cyril-roberts/check',
+                    },
+
+                ],
+                "interests": [
+                    {
+                        title: 'Music',
+                        description: 'I like writing poetry and then also putting that poetry to song',
+                        image: '',
+                    },
+                    {
+                        title: 'Education',
+                        description: '(with focus on technical training and upskilling)',
+                        image: ''
+                    },
+
+                    {
+                        title: 'Open Source Software',
+                        description: '',
+                        image: ''
+                    },
+
+                    {
+                        title: 'Outcome/Learning-focused contract work',
+                        description: '',
+                        image: ''
+                    },
+
+                    {
+                        title: 'Mental Health Advocacy',
+                        description: '...(with a focus on genuine engagement and undertanding as opposed to polite ignorance)',
+                        image: ''
+                    },
+
+                    {
+                        title: 'Music',
+                        description: '(piano, guitar, saxophone, singing, digimals)',
+                        image: ''
+                    },
+
+                    {
+                        title: 'Fightsports',
+                        description: '                    }',
+                        image: ''
+                    },
+                    {
+                        title: 'A smattering of literally everything else',
+                        description: '',
+                        image: ''
+                    },
+                    
+                ]
+            },
+        shoutouts: [
+            {
+                title: 'Obsidian',
+                description: 'This is very much just my checklist module, but mature and good and standalone',
+                link: '',
+                image: '',
+            }
+        ],
+
+            resume: {
+            "url": ""
+        },
+        socials: [
+            { 'text': 'twitter', icon: '', 'url': '' },
+            { 'text': 'instagram', icon: '', 'url': '' },
+            { 'text': 'github', icon: '', 'url': '' },
+            { 'text': 'linkedin', icon: '', 'url': '' },
+        ],
+        };
+
+
+        function render(model) {
+
+        }
+    </script>
+
     <style>
-        body,html {
+        body,
+        html {
             height: 100%;
         }
 
         div {
             margin-bottom: 5px;
-            min-height: 14%; /* 100/7 : 7 = number of sections*/
+            min-height: 14%;
+            /* 100/7 : 7 = number of sections*/
             color: white;
             text-align: center;
         }
-    
+
         div {
-            background-color: black;;
+            background-color: black;
+            ;
         }
 
-        div > div:nth-child(even) {
+        div>div:nth-child(even) {
             background-color: #555;
         }
 
-        div > div:nth-child(odd) {
+        div>div:nth-child(odd) {
             background-color: #777;
         }
-        .logo {}
 
-        .banner {}
-        
-        .projects {}
-        
-        .projects {}
-        
-        .prototypes {}
-        
-        .resume {}
-        
-        .socials {}
+        #logo {}
+
+        #banner {
+            height: 300px;
+            background-image: url('public/banner.jpeg');
+            background-position: center -1000px;
+            background-repeat: no-repeat;
+            color: #FFF;
+            text-align: center;
+        }
+
+        #projects {}
+
+        #projects {}
+
+        #prototypes {}
+
+        #resume {}
+
+        #socials {}
     </style>
 </head>
 
 <body>
-    <div class="logo">
-        LOGO
-    </div>
+    <header>
+        <h1 id="logo">
+            Dominic Cyril Roberts - Tryme!
+        </h1>
+
+        <section id="banner">
+            <h2 id="banner-text">
+                I like thinking about hard problems.
+            </h2>
+        </section>
+    </header>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Here is a short list of stuff I've done recently/am currently working on</p>
+
+        <section id="built">
+            <h3>
+                Stuff I've Made
+            </h3>
+            <p>Everything I've made belongs to a corporation, buy feel free to take a look at my <a href="public/dcr-resume.pdf">resume</a> to get a sense of the type of work I've done.</p>
+        </section>
+
+        <section id="building">
+            <h3>
+                Stuff I'm working on
+            </h3>
+            
+            <li>[This site](Link to todo)</li>
+            <li>[Check](link to git repo)
+                <p>This is my personal todo list application/a way for me to refamiliarize myself with modern web apis while making something I will kind of use sometimes. If it looks interesting as a product to you, [Obsidian](link to obsidian) is demonstrably more mature and robust and probably made by cools.</p>
+            </li>
+            
+
+        </section>
+        
+    </section>
     
-    <div class="banner">
-        BANNER
-        <div class="banner-text">
-            Banner/Hero Text
-        </div>
-    </div>
+    <section id="interests">
+        <h2>
+            Interests
+        </h2>
+        <p>Here is a list of stuff I am currently interested in but for which I have written no code</p>
+        <ul>
+            <li>Education (with focus on technical training and upskilling)</li>
+            <li>Open Source Software</li>
+            <li>Outcome/Learning focused contract work</li>
+            <li>Mental Health Advocacy (with a focus on genuine engagement and undertanding as opposed to polite ignorance)</li>
+            <li>Music (piano, guitar, saxophone, singing, digimals)</li>
+            <li>Competitive and Traditional Martial Arts</li>
+            <li>A smattering of literally everything else</li>
+        </ul>
+    </section>
 
-    <div class="projects">
-        PROJECTS:
+    <!-- <section id="shoutouts">
+        <h2>Shoutouts</h2>
+        Tools/Services/People/Things I like and want the world to know about
+    </section> -->
 
-        <div class="built">
-            Stuff you done built
-        </div>
+    <section id="resume">
+        <h2> Interested in working with me? 
+        </h2>
+        <ul>
+            <li>Resume 
+                <a href="public/dcr-resume.pdf">(pdf)</a>
+                <a href="public/dcr-resume.docx">(docx)</a>
+            </li>
+            <li>
+                <a href="linkedin.com/in/dominic-roberts-58bb3949/">LinkedIn</a>
+            </li>
+        </ul>
+    </section>
 
-        <div class="building">
-            Stuff you are working on
-        </div>
-
-        <div class="interests">
-            Stuff you are interested in
-        </div>
-    </div>
-
-    <div class="shoutouts">
-        Tools/Services/People/Things you like and want the world to know about
-    </div>
-
-    <div class="prototypes">
-        This is what most people call their portfolio. We ultimately will probably add this to the projects data model and section
-    </div>
-
-    <div class="resume">
-        A copy of your actual resume for companies and plebs who do not understand the site they are looking at
-    </div>
-
-    <div class="socials">
-        Social links
-    </div>
+    <section id="socials">
+        <h2>Socials</h2>
+    </section>
 
 </body>
 
-</html> 
+</html>
+
+
+<!-- 
+
+    Ford looking for contract workers across the stack.
+
+    3 years in java/javascript
+
+ -->
