@@ -112,8 +112,8 @@
     </script>
 
     <style>
-        body,
-        html {
+        /*--------------------- TRELLIS ---------------------*/
+        body, html {
             height: 100%;
         }
 
@@ -137,27 +137,41 @@
         div>div:nth-child(odd) {
             background-color: #777;
         }
+        /*--------------------- /TRELLIS ---------------------*/
 
-        #logo {}
+
+        /*------------------- SITE THEME ------------------*/
+
+        #logo {
+            background-color: black;
+            color: white;
+        }
 
         #banner {
             height: 300px;
-            background-image: url('public/banner.jpeg');
+            /* background-image: url('public/banner.jpeg'); */
+            background-color: orange;
             background-position: center -1000px;
             background-repeat: no-repeat;
             color: #FFF;
             text-align: center;
         }
+        #banner #banner-text {
+
+        }
+
+        #introduction {
+
+        }
 
         #projects {}
-
-        #projects {}
-
-        #prototypes {}
+        #projects #complete {}
+        #projects in-progress {}
 
         #resume {}
 
-        #socials {}
+        #link {}
+        /*------------------ /SITE THEME ------------------*/
     </style>
 </head>
 
@@ -174,28 +188,47 @@
         </section>
     </header>
 
+    <section id="introduction">
+        <h2>Why Hello There!</h2>
+        <p>
+            I'm Nic, and this is a site I made to tell you that! I am a software engineer and burgenoning entrepeneur with 5 years of industry experience working for Fortune 500 companies. I grew up with a genius for a dad, and an incredible listener for a mom, and they taught me everything they know; they did it so well that I think and listen better than they do! 
+        </p>
+        <p>
+            They are also West Indians who were smart enough to finish their education in the USA, where they had me! It also means my brothers and I were disciplined the way they do it in the Third World (once removed). The result of that is that I was finished baking pretty young, but I learned that if you talk out loud sometimes you get threatened or beat! So I've spent most of my adult life with clinical grade depression.
+        </p>
+        <p>
+            But good news! I recently realized the world isn't patronizing me when they say "my god you're smart". I recently realized the reason so many of my questions frustrate people is because they are not even remotely close to answering them.
+        </p>
+        <p>
+            Hello World! It's me Nic! I ask hard questions, and I don't stop thinking until I have answers in every language I speak.
+        </p>
+    </section>
+
     <section id="projects">
         <h2>Projects</h2>
         <p>Here is a short list of stuff I've done recently/am currently working on</p>
 
-        <section id="built">
+        <section id="complete">
             <h3>
                 Stuff I've Made
             </h3>
-            <p>Everything I've made belongs to a corporation, buy feel free to take a look at my <a href="public/dcr-resume.pdf">resume</a> to get a sense of the type of work I've done.</p>
+            <p>This section intentionally left blank</p>
+            <p><i>Everything I've made so far belongs to a corporation, buy feel free to take a look at my <a href="public/dcr-resume.pdf">resume</a> to get a sense of the type of work I've done.</i></p>
         </section>
 
-        <section id="building">
+        <section id="in-progress">
             <h3>
                 Stuff I'm working on
             </h3>
             
-            <li>[This site](Link to todo)</li>
-            <li>[Check](link to git repo)
-                <p>This is my personal todo list application/a way for me to refamiliarize myself with modern web apis while making something I will kind of use sometimes. If it looks interesting as a product to you, [Obsidian](link to obsidian) is demonstrably more mature and robust and probably made by cools.</p>
+            <li>
+                <h4>This Site (Link to git repo)</h4>
+                <p>I built the site your interacting with with my very own hands-and-brain!</p>
             </li>
-            
-
+            <li>
+                <h4>Check (link to git repo)</h4>
+                <p>This is my personal todo list application/a way for me to play with new techonologies while making something I will kind of use sometimes. If it looks interesting as a product to you, [Obsidian](link to obsidian) is demonstrably more mature and robust (and probably made by cools).</p>
+            </li>
         </section>
         
     </section>
@@ -222,7 +255,7 @@
     </section> -->
 
     <section id="resume">
-        <h2> Interested in working with me? 
+        <h2> Wanna Work with me? <i>(Currently working under contract)</i> 
         </h2>
         <ul>
             <li>Resume 
@@ -235,8 +268,9 @@
         </ul>
     </section>
 
-    <section id="socials">
-        <h2>Socials</h2>
+    <section id="links">
+        <h2>Want more of me for some reason?</h2>
+        <a href="http://https://linktr.ee/dominicroberts">Look it's all the links!</a>
     </section>
 
 </body>
