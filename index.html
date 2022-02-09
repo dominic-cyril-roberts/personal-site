@@ -7,170 +7,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DCR</title>
 
-    <script>
-        const model = {
-            header: {
-                logo: "Dominic Cyril Roberts",
-                banner: {
-                    "background-image": '',
-                    "banner-text": 'The Incredible, Credible Man!'
-                },
-            },
-
-            projects: {
-                "built": [],
-                "building": [
-                    {
-                        title: 'personal-site',
-                        description: 'You\'re looking at it! I use this site to play with different technologies/practice css. I keep different versions in github for reference.',
-                        image: '',
-                        link: 'https://dcr-tryme.net',
-                        github: 'https://github.com/dominic-cyril-roberts/personal-site',
-                    },
-                    {
-                        title: 'checklist',
-                        description: 'The note taking app I always wanted (low-key obsidian has already made this at this point it`\s kind of an exercise for me)',
-                        image: '',
-                        link: 'https://dcr-tryme.net',
-                        github: 'https://github.com/dominic-cyril-roberts/check',
-                    },
-
-                ],
-                "interests": [
-                    {
-                        title: 'Music',
-                        description: 'I like writing poetry and then also putting that poetry to song',
-                        image: '',
-                    },
-                    {
-                        title: 'Education',
-                        description: '(with focus on technical training and upskilling)',
-                        image: ''
-                    },
-
-                    {
-                        title: 'Open Source Software',
-                        description: '',
-                        image: ''
-                    },
-
-                    {
-                        title: 'Outcome/Learning-focused contract work',
-                        description: '',
-                        image: ''
-                    },
-
-                    {
-                        title: 'Mental Health Advocacy',
-                        description: '...(with a focus on genuine engagement and undertanding as opposed to polite ignorance)',
-                        image: ''
-                    },
-
-                    {
-                        title: 'Music',
-                        description: '(piano, guitar, saxophone, singing, digimals)',
-                        image: ''
-                    },
-
-                    {
-                        title: 'Fightsports',
-                        description: '                    }',
-                        image: ''
-                    },
-                    {
-                        title: 'A smattering of literally everything else',
-                        description: '',
-                        image: ''
-                    },
-                    
-                ]
-            },
-        shoutouts: [
-            {
-                title: 'Obsidian',
-                description: 'This is very much just my checklist module, but mature and good and standalone',
-                link: '',
-                image: '',
-            }
-        ],
-
-            resume: {
-            "url": ""
-        },
-        socials: [
-            { 'text': 'twitter', icon: '', 'url': '' },
-            { 'text': 'instagram', icon: '', 'url': '' },
-            { 'text': 'github', icon: '', 'url': '' },
-            { 'text': 'linkedin', icon: '', 'url': '' },
-        ],
-        };
-
-
-        function render(model) {
-
-        }
-    </script>
-
     <style>
         /*--------------------- TRELLIS ---------------------*/
         body, html {
             height: 100%;
         }
 
-        div {
-            margin-bottom: 5px;
-            min-height: 14%;
-            /* 100/7 : 7 = number of sections*/
-            color: white;
-            text-align: center;
-        }
-
-        div {
-            background-color: black;
-            ;
-        }
-
-        div>div:nth-child(even) {
-            background-color: #555;
-        }
-
-        div>div:nth-child(odd) {
-            background-color: #777;
+        .card {
+            border: 1px solid black;
         }
         /*--------------------- /TRELLIS ---------------------*/
 
 
         /*------------------- SITE THEME ------------------*/
-
         #logo {
-            background-color: black;
-            color: white;
         }
 
         #banner {
-            height: 300px;
-            /* background-image: url('public/banner.jpeg'); */
-            background-color: orange;
-            background-position: center -1000px;
-            background-repeat: no-repeat;
-            color: #FFF;
             text-align: center;
         }
-        #banner #banner-text {
 
+        #banner img{
+            width: 200px;
+            border-radius: 100%;
+        }
+        #banner #banner-text {
         }
 
         #introduction {
 
         }
 
-        #projects {}
-        #projects #complete {}
-        #projects in-progress {}
+        #projects {
+        }
+        #projects li {
+            list-style-type: none;
+        }
+        #projects #complete {
+        }
+        #projects #in-progress .card {
+            margin-bottom: 5px;
+        }
+
+        #interests{
+        }
 
         #resume {}
 
-        #link {}
+        #links {}
         /*------------------ /SITE THEME ------------------*/
     </style>
 </head>
@@ -178,10 +62,11 @@
 <body>
     <header>
         <h1 id="logo">
-            Dominic Cyril Roberts - Tryme!
+            Dominic Cyril Roberts - Try me!
         </h1>
 
         <section id="banner">
+            <img src="public/cover-photo.png" alt="">
             <h2 id="banner-text">
                 I like thinking about hard problems.
             </h2>
@@ -191,10 +76,10 @@
     <section id="introduction">
         <h2>Why Hello There!</h2>
         <p>
-            I'm Nic, and this is a site I made to tell you that! I am a software engineer and burgenoning entrepeneur with 5 years of industry experience working for Fortune 500 companies. I grew up with a genius for a dad, and an incredible listener for a mom, and they taught me everything they know; they did it so well that I think and listen better than they do! 
+            I'm Nic, and this is a site I made to tell you that. I am a software engineer and burgenoning entrepeneur with 5 years of industry experience working for Fortune 500 companies. I grew up with a genius for a dad, and an incredible listener for a mom, and they taught me everything they know. They did it so well that I think and listen better than they do! 
         </p>
         <p>
-            They are also West Indians who were smart enough to finish their education in the USA, where they had me! It also means my brothers and I were disciplined the way they do it in the Third World (once removed). The result of that is that I was finished baking pretty young, but I learned that if you talk out loud sometimes you get threatened or beat! So I've spent most of my adult life with clinical grade depression.
+            They are also West Indians who were smart enough to finish their education in the USA, where they had my brothers and me. That means we were disciplined the way they do it in the Third World (once removed). The result of that is that I was finished baking pretty young, but I learned that if you talk out loud sometimes you get threatened or beat! So I've spent most of my adult life with clinical grade depression.
         </p>
         <p>
             But good news! I recently realized the world isn't patronizing me when they say "my god you're smart". I recently realized the reason so many of my questions frustrate people is because they are not even remotely close to answering them.
@@ -206,56 +91,49 @@
 
     <section id="projects">
         <h2>Projects</h2>
-        <p>Here is a short list of stuff I've done recently/am currently working on</p>
-
-        <section id="complete">
-            <h3>
-                Stuff I've Made
-            </h3>
-            <p>This section intentionally left blank</p>
-            <p><i>Everything I've made so far belongs to a corporation, buy feel free to take a look at my <a href="public/dcr-resume.pdf">resume</a> to get a sense of the type of work I've done.</i></p>
-        </section>
 
         <section id="in-progress">
             <h3>
                 Stuff I'm working on
             </h3>
             
-            <li>
-                <h4>This Site (Link to git repo)</h4>
-                <p>I built the site your interacting with with my very own hands-and-brain!</p>
+            <li class="card">
+                <h4>Personal Site | <a href="https://github.com/dominic-cyril-roberts/personal-site">git</a></h4>
+                <p>I built the site your interacting with with my very own hands-and-brain! It's my living introduction to me, and also a place to mess with frontend technologies and workflows.</p>
             </li>
-            <li>
-                <h4>Check (link to git repo)</h4>
-                <p>This is my personal todo list application/a way for me to play with new techonologies while making something I will kind of use sometimes. If it looks interesting as a product to you, [Obsidian](link to obsidian) is demonstrably more mature and robust (and probably made by cools).</p>
+            <li class="card">
+                <h4>Check | <a href="https://github.com/dominic-cyril-roberts/check">git</a></h4>
+                <p>This is my personal todo list application/a way for me to play with new techonologies and stacks while making something I will kind of use sometimes. If it looks interesting as a product to you, <a href="https://obsidian.md/">Obsidian</a> is demonstrably more mature and robust (and probably made by cools).</p>
             </li>
         </section>
+
+        <section id="complete">
+            <h3>
+                Stuff I've Made
+            </h3>
+            <p><i>This section intentionally left blank</i></p>
+            <p>Everything I've made so far belongs to a corporation, but feel free to take a look at my <a href="public/dcr-resume.pdf">resume</a> to get a sense of the type of work I've done.</p>
+        </section>
         
+        <section id="interests">
+            <h2>
+                Interests
+            </h2>
+            <p>Here is a list of stuff I am currently interested in but for which I have written no code</p>
+            <ul>
+                <li>Education (with focus on technical training and upskilling for industry)</li>
+                <li>Open Source Software</li>
+                <li>Outcome/Learning focused contract work</li>
+                <li>Mental Health Advocacy (with a focus on genuine engagement and undertanding as opposed to polite ignorance)</li>
+                <li>Music (piano, guitar, saxophone, singing, digimals)</li>
+                <li>Competitive and Traditional Martial Arts</li>
+                <li>A smattering of literally everything else</li>
+            </ul>
+        </section>
     </section>
     
-    <section id="interests">
-        <h2>
-            Interests
-        </h2>
-        <p>Here is a list of stuff I am currently interested in but for which I have written no code</p>
-        <ul>
-            <li>Education (with focus on technical training and upskilling)</li>
-            <li>Open Source Software</li>
-            <li>Outcome/Learning focused contract work</li>
-            <li>Mental Health Advocacy (with a focus on genuine engagement and undertanding as opposed to polite ignorance)</li>
-            <li>Music (piano, guitar, saxophone, singing, digimals)</li>
-            <li>Competitive and Traditional Martial Arts</li>
-            <li>A smattering of literally everything else</li>
-        </ul>
-    </section>
-
-    <!-- <section id="shoutouts">
-        <h2>Shoutouts</h2>
-        Tools/Services/People/Things I like and want the world to know about
-    </section> -->
-
     <section id="resume">
-        <h2> Wanna Work with me? <i>(Currently working under contract)</i> 
+        <h2>Resume <i>(I am under contract through Jan, 2023, but if what you do is wildly unrelated to cars we can maybe do a cool together!)</i> 
         </h2>
         <ul>
             <li>Resume 
@@ -268,20 +146,18 @@
         </ul>
     </section>
 
-    <section id="links">
+    <section id="links" target="_blank">
         <h2>Want more of me for some reason?</h2>
-        <a href="http://https://linktr.ee/dominicroberts">Look it's all the links!</a>
+        <a href="https://linktr.ee/dominicroberts" target="_blank">Look it's all the links!</a>
+        <h3>At present though I am most active on:</h3>
+        <ul>
+            <li><a href="https://www.instagram.com/me.nic.from.earlier/">Instagram</a> for when I took a picture and I wanna throw it in the world's face</li>
+            <li><a href="https://twitter.com/medominicholas">Twitter</a> for speaking to living breathing humans who also wanna do that</li>
+            <li><a href="https://medium.com/@dominic.cyril.roberts">Medium</a> for long form thoughts in written form</li>
+            <li><a href="https://www.youtube.com/channel/UCp6vqqTnKYt_N8GjSBdetkg">Youtube</a> for music I didn't perform live</li>
+        </ul>
     </section>
 
 </body>
 
 </html>
-
-
-<!-- 
-
-    Ford looking for contract workers across the stack.
-
-    3 years in java/javascript
-
- -->
