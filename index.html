@@ -8,61 +8,116 @@
     <title>DCR</title>
 
     <style>
+        
+        /* 3DA5D9
+        73BFB8 */
         /*--------------------- TRELLIS ---------------------*/
-        body, html {
-            height: 100%;
+        html {
+            background-color: black;
+        }
+        body {
+            background-color: #20a4be;
+            margin:  0 0 40px 0;
+            /* margin: 5px 5px 40px 5px; */
+            padding-bottom: 5px;
+            color: #FFF;
+        }
+
+        section h2 {
+            text-decoration: underline;
+        }
+        section h2, section h3 {
+            text-align: center;
         }
 
         .card {
             border: 1px solid black;
+            padding: 10px;
+            list-style-type: none; /*for if you slap this on an li*/
+            margin: 5px;
+        }
+
+        .disclaimer {
+            text-align: center;
+        }
+
+        .flex-center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        a {
+            color: #AFFC41;
         }
         /*--------------------- /TRELLIS ---------------------*/
 
 
         /*------------------- SITE THEME ------------------*/
         #logo {
+            padding: 5px;
+            margin: 0;
         }
 
+        header {
+            background-color: #a36c6cd2;
+        }
         #banner {
             text-align: center;
         }
-
         #banner img{
             width: 200px;
             border-radius: 100%;
         }
         #banner #banner-text {
+            text-decoration: underline;
+            margin-bottom: 0px;
+            padding-bottom: 5px;
         }
-
+        
         #introduction {
-
+            padding: 10px;
+            background-color: #086375;
+        }
+        #introduction h2{
+            text-align: left;
         }
 
         #projects {
+            /* background-color: #086375; */
+            background-color: #012a2e;
+            padding-top: 10px;
         }
         #projects li {
-            list-style-type: none;
-        }
-        #projects #complete {
         }
         #projects #in-progress .card {
             margin-bottom: 5px;
         }
-
+        #projects #complete {
+        }
+        
         #interests{
+            background-color: #086375;
+            /* background-color: #012a2e; */
+            padding: 5px;
         }
 
         #resume {}
+        #resume ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-        #links {}
+        #links {
+        }
         /*------------------ /SITE THEME ------------------*/
     </style>
 </head>
-
 <body>
     <header>
         <h1 id="logo">
-            Dominic Cyril Roberts - Try me!
+            Dominic Cyril Roberts - Try Me!
         </h1>
 
         <section id="banner">
@@ -76,10 +131,10 @@
     <section id="introduction">
         <h2>Why Hello There!</h2>
         <p>
-            I'm Nic, and this is a site I made to tell you that. I am a software engineer and burgenoning entrepeneur with 5 years of industry experience working for Fortune 500 companies. I grew up with a genius for a dad, and an incredible listener for a mom, and they taught me everything they know. They did it so well that I think and listen better than they do! 
+            I'm Nic, and this is a site I made to tell you that. I am a software engineer and burgenoning entrepeneur with 5 years of industry experience working for Fortune 500 companies. I grew up with a genius for a dad, and an incredible listener for a mom, and they taught me everything they know and then some! 
         </p>
         <p>
-            They are also West Indians who were smart enough to finish their education in the USA, where they had my brothers and me. That means we were disciplined the way they do it in the Third World (once removed). The result of that is that I was finished baking pretty young, but I learned that if you talk out loud sometimes you get threatened or beat! So I've spent most of my adult life with clinical grade depression.
+            My parents are West Indians who were smart enough to get sent to finish their education in the USA, where they had my brothers and me. That means we were disciplined the way they do it in the Third World (once removed). The result of that is: I was finished baking pretty young (my parents did a near perfect job for about 8 years and then I became a heavily isolated latchkey kid; raised by tv). I was the youngest, so I got real quiet because I learned that if you talk out loud sometimes you get threatened or beat! So I've spent most of my adult life with clinical grade depression (because of the silence).
         </p>
         <p>
             But good news! I recently realized the world isn't patronizing me when they say "my god you're smart". I recently realized the reason so many of my questions frustrate people is because they are not even remotely close to answering them.
@@ -99,7 +154,7 @@
             
             <li class="card">
                 <h4>Personal Site | <a href="https://github.com/dominic-cyril-roberts/personal-site">git</a></h4>
-                <p>I built the site your interacting with with my very own hands-and-brain! It's my living introduction to me, and also a place to mess with frontend technologies and workflows.</p>
+                <p>I built the site you're interacting with with my very own hands-and-brain! It's my living introduction to me, and also a place to mess with frontend technologies and workflows.</p>
             </li>
             <li class="card">
                 <h4>Check | <a href="https://github.com/dominic-cyril-roberts/check">git</a></h4>
@@ -111,53 +166,62 @@
             <h3>
                 Stuff I've Made
             </h3>
-            <p><i>This section intentionally left blank</i></p>
-            <p>Everything I've made so far belongs to a corporation, but feel free to take a look at my <a href="public/dcr-resume.pdf">resume</a> to get a sense of the type of work I've done.</p>
+            <section class="disclaimer card">
+                <p>This section intentionally left blank</p>
+                <p>Everything I've made so far belongs to a corporation, but feel free to take a look at my <a href="public/dcr-resume.pdf">resume</a> to get a sense of the type of work I've done.</p>
+            </section>
         </section>
         
-        <section id="interests">
+        <section id="interests" class="flex-center" >
             <h2>
                 Interests
             </h2>
             <p>Here is a list of stuff I am currently interested in but for which I have written no code</p>
             <ul>
-                <li>Education (with focus on technical training and upskilling for industry)</li>
-                <li>Open Source Software</li>
-                <li>Outcome/Learning focused contract work</li>
-                <li>Mental Health Advocacy (with a focus on genuine engagement and undertanding as opposed to polite ignorance)</li>
-                <li>Music (piano, guitar, saxophone, singing, digimals)</li>
+                <li>Open Source Software (contributing to existing projects and improving workflows and paradigms in the space)</li>
+                <li>Mental Health Advocacy (with a focus on genuine engagement and understanding as opposed to polite ignorance)</li>
+                <li>Education (with a focus on technical training and upskilling for industry at scale)</li>
+                <li>Music (piano, guitar, saxophone, percussion, singing, digimals)</li>
                 <li>Competitive and Traditional Martial Arts</li>
+                <li>Outcome/Learning focused contract work</li>
                 <li>A smattering of literally everything else</li>
             </ul>
         </section>
     </section>
-    
+
+    <section id="links" class="flex-center">
+        <h2>Want More of Me?</h2>
+        <p>
+            <a href="https://linktr.ee/dominicroberts" target="_blank">Look it's all the links!</a>
+        </p>
+
+        <section id="link-leaves">
+            <h3>At present though, I am most active on:</h3>
+            <ul>
+                <li><a href="https://www.instagram.com/me.nic.from.earlier/">Instagram</a> for when I took a picture and I wanna throw it in the world's face</li>
+                <li><a href="https://twitter.com/medominicholas">Twitter</a> for speaking to living breathing humans who also wanna do that</li>
+                <li><a href="https://medium.com/@dominic.cyril.roberts">Medium</a> for long form thoughts in written form</li>
+                <li><a href="https://www.youtube.com/channel/UCp6vqqTnKYt_N8GjSBdetkg">Youtube</a> for music I didn't perform live</li>
+            </ul>
+        </section>
+    </section>
+
     <section id="resume">
-        <h2>Resume <i>(I am under contract through Jan, 2023, but if what you do is wildly unrelated to cars we can maybe do a cool together!)</i> 
+        <h2>You a Recruiter? 
         </h2>
+        <p class="disclaimer">
+            (I am under contract through March, 2023, but if what you do is wildly unrelated to cars we can maybe do a cool together!)
+        </p>
         <ul>
+            <li>
+                <a href="linkedin.com/in/dominic-roberts-58bb3949/">LinkedIn</a>
+            </li>
             <li>Resume 
                 <a href="public/dcr-resume.pdf">(pdf)</a>
                 <a href="public/dcr-resume.docx">(docx)</a>
             </li>
-            <li>
-                <a href="linkedin.com/in/dominic-roberts-58bb3949/">LinkedIn</a>
-            </li>
         </ul>
     </section>
-
-    <section id="links" target="_blank">
-        <h2>Want more of me for some reason?</h2>
-        <a href="https://linktr.ee/dominicroberts" target="_blank">Look it's all the links!</a>
-        <h3>At present though I am most active on:</h3>
-        <ul>
-            <li><a href="https://www.instagram.com/me.nic.from.earlier/">Instagram</a> for when I took a picture and I wanna throw it in the world's face</li>
-            <li><a href="https://twitter.com/medominicholas">Twitter</a> for speaking to living breathing humans who also wanna do that</li>
-            <li><a href="https://medium.com/@dominic.cyril.roberts">Medium</a> for long form thoughts in written form</li>
-            <li><a href="https://www.youtube.com/channel/UCp6vqqTnKYt_N8GjSBdetkg">Youtube</a> for music I didn't perform live</li>
-        </ul>
-    </section>
-
 </body>
 
 </html>
