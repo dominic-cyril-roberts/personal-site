@@ -1,0 +1,23 @@
+- TODO:
+    - [] HTML:
+        - Shows Section
+            - Name: Waterloo Sunrise - Pine Trees in the Garden
+            - Date
+            - Address
+            - Sponsored by: vault vibes, waterloo sunset
+            - powered by: qt, rev coffee roasters, dori the explorer, rage, darkness, racetrac, alwaus coca cola (tm)
+            - setlist:
+        - Nav Bar
+        - Technical Atelier
+        - Articles
+    - CSS:
+        - [X] Version 1.1 theme (hackerboi)
+            - Seeded by my outfit from git + gisellep.com
+    
+- Stretch
+    - CMS
+        - Projects from git
+        - Ongoing projects that are not code (eg. fight sport)
+        - Modify interests to point at an accountability tracker
+    - TweetDeck
+
