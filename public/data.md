@@ -1,0 +1,26 @@
+- empathy-calla-walsh-0
+    - link: https://medium.com/@dominic.cyril.roberts/watch-me-try-to-do-a-empathy-with-the-younglings-32aaf197d70a
+    - titles:
+        - Watch Me Try to do a “Empathy” With the Younglings
+- business-mlms-0
+    - link: https://medium.com/@dominic.cyril.roberts/literally-every-company-is-an-mlm-says-notoriously-crazy-boi-196e0d353707
+    - titles
+        - “Literally every company is an MLM” says notoriously crazy boi
+- core-identity-0
+    - link: https://medium.com/@dominic.cyril.roberts/buddhism-for-dumb-dumb-stupid-idiots-like-you-and-me-c95c0d343c9
+    - titles
+        - Buddhism for Dumb Dumb Stupid Idiots, Like You and Me
+- core-language-0
+    - link: https://medium.com/@dominic.cyril.roberts/dominic-cyril-roberts-theorem-of-expression-8b2200c40170
+    - titles:
+        - Dominic Cyril Roberts Theorem of Expression
+- finances-debt-credit-unions-0
+    - link: https://medium.com/@dominic.cyril.roberts/credit-unions-are-how-you-beat-student-debt-says-insane-man-ef52e82bf1db
+    - titles:
+        - “Credit Unions Are How you Beat Student Debt”, Says Insane Man
+- core-knowledge-0
+    - link: https://medium.com/@dominic.cyril.roberts/a-crazy-laypersons-guide-to-the-fundamental-nature-of-knowledge-d66612a5be0d
+    - A “Crazy Layperson’s” Guide to The Fundamental Nature of Knowledge
+- mental-health-perspectives-bipolar1-0
+    - link: https://medium.com/@dominic.cyril.roberts/what-its-like-living-with-bipolar-i-disorder-df3e65d6e268
+    - What it’s like living with “Bipolar I Disorder”
