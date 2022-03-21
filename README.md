@@ -1,5 +1,8 @@
 # DCR Tryme -
 
-[https://dcr-tryme.net](This WAS gonna be a PR firm; hence the `.net` domain, that ooulda been real clever) but now it's just holding my personal site till I purchase more domains.
+Hey look it's my [site](https://dcr-tryme.net)!
+
+(This WAS gonna be a PR firm; but now it's just my actual personal site with all the attached escapades until I buy more domains.)
 
 ---
+
