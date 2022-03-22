@@ -1,26 +1,34 @@
-- TODO:
-    - [] HTML:
-        - Shows Section
-            - Name: Waterloo Sunrise - Pine Trees in the Garden
-            - Date
-            - Address
-            - Sponsored by: vault vibes, waterloo sunset
-            - powered by: qt, rev coffee roasters, dori the explorer, rage, darkness, racetrac, alwaus coca cola (tm)
-            - setlist:
-        - Articles
-            - data
-                - link: (right now this points to medium but ultimately this probably wants to be a symbol or direct pointer to a list of `platforms`)
-                - Content: 
-                    - initially static blob of html (which i hate on principal)
-                - img: we probably want some way to express an opinion about the splash for this entity, regardless of the actual style of component it is being expressed against
-        - Nav Bar
-            - home
-            - articles
-                - link
-        - Technical Atelier
-    - CSS:
-        - [X] Version 1.1 theme (hackerboi)
-            - Seeded by my outfit from git + gisellep.com
+- todo
+    - [ ] contact
+    - [ ] music
+    - [ ] articles
+    - [ ] services
+- sections:
+    - nav-bar
+        - home
+        - services
+            - technical atelier
+            - musical atelier
+            - contract web development
+            - technical consulting
+        - shows
+        - contact me
+        - articles
+            - link
+- themes/designs
+    - [X] Version 1.1 theme (hackerboi)
+        - Seeded by my outfit from git + gisellep.com
+- brain-thoughts:
+    - shows section
+        - pop-ups
+            - waterloo sunset
+            - the place
+        - powered by: qt, rage, curiosity, profound love and respect for thingking things, rev coffee roasters, dori the explorer, rage, darkness, racetrac, always coca cola (tm)
+    - articles
+        - link: (right now this points to medium but ultimately this probably wants to be a symbol or direct pointer to a list of `platforms`)
+        - Content: 
+            - initially static blob of html (which i hate on principal)
+        - img: we probably want some way to express an opinion about the splash for this entity, regardless of the actual style of component it is being expressed against
     
 - Stretch
     - CMS
@@ -29,4 +37,3 @@
         - Modify interests to point at an accountability tracker
     - TweetDeck
     - id link for headers
-
