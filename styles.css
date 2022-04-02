@@ -7,6 +7,10 @@
     padding: 10px;
     list-style-type: none; /*for if you slap this on an li*/
 }
+.card.oh-noes {
+    border: 1px solid red;
+    border-bottom: 2px solid #750808 ;
+}
 
 .disclaimer {
     text-align: center;
@@ -55,6 +59,7 @@ nav {
     background-color: black;
 }
 nav li {
+    border-right: 1px solid #4faabcaa;
     flex: 1;
 }
 nav .selected {
@@ -79,7 +84,7 @@ header {
 header img{
     width: 190px;
     height: 140px;
-    border: 2px solid #333;
+    /* border: 2px solid #333; */
     border-radius: 100%;
 }
 header #banner-text {

@@ -1,16 +1,35 @@
 - todo
-    - [ ] contact
-    - [ ] music
     - [ ] articles
+        - I have credible thoughts about things that haven't been vetted by Phds' and are therefore broadly dismissed by people who don't care to think from first principles. I am not unique in this. It is frustrating to talk about these thoughts in person because people often engage novel ideas they disagree with from a defensive posture that presupposes the idea is wrong BECAUSE they don't already agree with it. So I write those thoughts down.
+        - [x] migrate links
+        - [ ] data structure
+            - [ ] link
+            - [ ] title 
+            - [ ] blurb/description
+        - [ ] data entry
+    - [x] contact
+        - phone 
+        - email
+        - instagram
+        - twitter
     - [ ] services
+    - [ ] music
 - sections:
     - nav-bar
         - home
         - services
+            - technical consulting
+                - I am far above average at getting things done using code. If you'd like me to weigh in on a technical problem you have I will give you an hour of my time for $100 and we can come up with a plan to solve that problem (either during that meeting or moving forward). Corporations pay my 6 figures a year for this service but they're frustrating as hell to work with because the people with the problems are generally so far removed from the development team.  
+            - contract web development
+                - If you just need a website made or revamped I do that too. I also do it for absurdly cheap because I am currently building out my freelance portfolio. This site is the only thing I've worked on that's deployed at present, but below is a list of services I offer in this space:
+                    - Content
+                        - This is the thing that actually matters but which so many people in this industry overlook for some reason. I start by working with you to identify what a sane content offering for your website looks like given your specific business needs; we theme and design on top of that content.
+                    - Web Development
+                        - Once we nail down the content (or if you already have a website whose content you are happy with but which you want updated) I will write the actual code and handle deploying that site for you. I will do it quickly because this is not actually a difficult job unless you use arbitrarily bad tools.
+                    - Payment Processing
+                        - Right now I have done this using Paypal for my own site. I am interested in using Stripe , which is supposed to be better for large volume/big ticket transactions. If there is another payment processor (e.g Square) you are interested in using or that makes sense then I will learn that API and develop a solution using it. The last corporate gig I had hired about 9 developers to do this job and committed about a year to get the MVP out (that is like, a million dollars for that company). I will do it for 4 figures, because it is not a hard problem.
             - technical atelier
             - musical atelier
-            - contract web development
-            - technical consulting
         - shows
         - contact me
         - articles
