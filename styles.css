@@ -31,7 +31,9 @@ body {
     margin:  0 0 40px 0;
     padding-bottom: 5px;
     color: #FFF;
-    background-color: #012a2e;
+    background-color: #001415;
+    background: no-repeat fixed center/100%  url("public/globe.svg");
+    font-size: 1.2em;
 }
 
 h2, h3 {
@@ -68,7 +70,7 @@ nav .selected {
 
 header, section {
     padding: 0 10%;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 /*--------------------- /TRELLIS ---------------------*/
 
