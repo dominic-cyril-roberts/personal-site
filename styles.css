@@ -60,7 +60,7 @@ nav {
     
     background-color: black;
 }
-nav li {
+nav li, nav label {
     border-right: 1px solid #306e7aaa;
     flex: 1;
 }
@@ -98,7 +98,6 @@ header #banner-text {
 #introduction {
     padding: 0 10%;
     background-color: #075564;
-    
 }
 
 #introduction h2{

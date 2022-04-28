@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterloo Sunset - Auction</title>
+
+    <style>
+        html {
+            font-size: 1.3em;
+            height: 100%;
+            background-image: url(../../public/waterloo-postcard.jpeg),
+            linear-gradient(rgba(219, 97, 21, 0.633), rgba(230, 150, 23, 0.924), rgba(0, 110, 255, 0.165), rgba(45, 22, 110, 0.165));
+            background-size: 100% 100%;
+        }
+        
+        body {
+            height: 100%;
+            width: 800px;
+            background-color: white;
+            display: flex; 
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #flavor-text {
+            width: 70%;
+        }
+        section {
+            /* border: 3px solid black; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1><a href="https://waterloosunsetsmyrna.com/">Waterloo Sunset</a></h1>
+    <section id="banner">
+        <h2>Album Title: <cite> Based</cite></h2>
+        <h3>Catalog Number: # ######## 2</h3>
+    </section>
+
+    <section id="sample">
+        <audio src="../../public/bass.m4a" loop controls>test</audio>
+    </section>
+    <section id="flavor-text">
+        <h2>A note from the Curator</h2>
+        <p>This is a bass line put together by <a href="https://dcr-tryme.net">Dominic Cyril Roberts</a> in GarageBand
+            to illustrate that the embedded audio track works in browsers. It is somber and tense, dark and brooding; a
+            muddy canvas for a tortured soul to haunt bars with. He messed up the loop so there's a long pause when it
+            resets but he was too lazy to fix it. </p>
+    </section>
+
+    <section id="tracklist">
+        <h3>Track List</h3>
+        <ol>
+            <li>Based
+            </li>
+        </ol>
+    </section>
+
+    <section id="ebay">Embedded ebay nonsense will go here (comments and bidding interface)</section>
+</body>
+
+</html>
