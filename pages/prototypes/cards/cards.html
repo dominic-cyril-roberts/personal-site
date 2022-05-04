@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,25 +8,64 @@
     <title>Cards</title>
 
     <style>
-        .hand {
+        body {
             display: flex;
-            width: 300px;
-            height: 200px;
-            border: 2px solid maroon;
-        }
-
-        .bg-red {
-            background-color: red;
-            color: white;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
 
         .card {
+            width: 200px;
+            height: 300px;
+            border: 3px solid black;
+            margin-bottom: 50px;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card div {
+            flex: 1;
+            border: 1px solid black;
+        }
+
+        .card .face {
+            padding: 10px;
+            font-size: 1.5em;
+            font-weight: bolder;
+            font-stretch: 100%;
+        }
+
+        .card .face:nth-last-child(1) {
+            align-self: flex-end;
+            align-content: flex-end;
+        }
+
+        .card .display {
+            flex: 7;
+
+            display: flex;
+        }
+
+        .pip-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 8em;
+        }
+
+        .pip {
+            width: 30px;
+            height: 30px;
+            background-color: red;
             border: 1px solid black;
         }
     </style>
 </head>
 
 <body>
+
     <script>
         class Card {
             static SUITS = {
@@ -40,31 +80,110 @@
                 this.suit = suit;
             }
         }
-
-        //make deck of cards
-        let deck = [];
-        for (let suit in Card.SUITS) {
-            for( let face = 0; face < 13; face++ ) {
-                deck.push(new Card(face, suit));
-            }
+        
+        let deck = createDeck();
+        for(let i = 0; i < deck.length; i++) {
+            document.body.appendChild(createCard(deck[i].face, deck[i].suit));
         }
         
-        //make a hand of cards
-        let hand = document.createElement("section");
-        hand.className = "hand bg-red";
+        function createDeck() {
+            let deck = [];
 
-        let card = deck.pop();
+            for (let suit in Card.SUITS) {
+                for (let face = 1; face <= 13; face++) {
+                    deck.push(new Card(face, suit));
+                }
+            }     
 
-        //we need to map card-object to an image for the user
-        let cardElement = document.createElement("img");
-        let url = "../../../public/" + card.face + "-" + card.suit + ".jpeg";
-
-        cardElement.src = url;
+            return deck;
+        }
         
-        document.body.appendChild(hand);
-        hand.appendChild(cardElement);
+        function createCard(face, suit) {
+            let cardElement = document.createElement("div");
+            cardElement.className = "card";
 
-        
+            let topFaceElement = createFaceElement(face);
+            let displayElement = createDisplayElement(face, suit);
+            let bottomFaceElement = createFaceElement(face);
+
+            cardElement.appendChild(topFaceElement);
+            cardElement.appendChild(displayElement);
+            cardElement.appendChild(bottomFaceElement);
+
+            return cardElement;
+        }
+
+        function createFaceElement(face) {
+            let faceElement = document.createElement("div");
+            faceElement.className = "face";
+
+            let textNode = document.createTextNode(face);
+            faceElement.appendChild(textNode);
+
+            return faceElement;
+        }
+
+        function createDisplayElement(face, suit) {
+            let displayElement = document.createElement("div");
+            displayElement.className = "display";
+
+            if (face > 10) {
+                displayElement.appendChild(createRoyal(face));
+            }
+            else {
+                let leftPipContainer = createPipContainer();
+                let rightPipContainer = createPipContainer();
+                let middlePipContainer = createPipContainer();
+
+                if (face >= 2) {
+                    for (let i = 0; i < Math.floor(face / 2); i++) {
+                        leftPipContainer.appendChild(createPip(suit));
+                        rightPipContainer.appendChild(createPip(suit));
+                    }
+                }
+
+                if (face % 2 != 0) { 
+                    middlePipContainer.appendChild(createPip(suit));
+                }
+
+                displayElement.appendChild(leftPipContainer);
+                displayElement.appendChild(middlePipContainer);
+                displayElement.appendChild(rightPipContainer);
+            }
+
+            return displayElement;
+        }
+
+        function createPipContainer() {
+            let pipContainer = document.createElement("div");
+            pipContainer.className = "pip-container";
+
+            return pipContainer;
+        }
+
+        function createRoyal(face) {
+            let container = createPipContainer();
+            let textNode;
+
+            if (face == 11) {
+                textNode = document.createTextNode('J');
+            } else if (face == 12) {
+                textNode = document.createTextNode('Q');
+            } else if (face == 13) {
+                textNode = document.createTextNode('K');
+            }
+
+            container.appendChild(textNode);
+
+            return container;
+        }
+
+        function createPip(suit) {
+            let pipElement = document.createElement("span");
+            pipElement.className = "pip";
+
+            return pipElement;
+        }
     </script>
 </body>
 
