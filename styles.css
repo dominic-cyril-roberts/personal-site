@@ -60,7 +60,7 @@ nav {
     
     background-color: black;
 }
-nav li, nav label {
+nav a, nav label {
     border-right: 1px solid #306e7aaa;
     flex: 1;
 }

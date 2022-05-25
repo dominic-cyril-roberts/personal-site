@@ -30,3 +30,22 @@ Cards:
             - make a card DOM element with suit + face
             - attach DOM element to hand
             - attach hand somewhere
+
+            - Make texas hold 'em
+                - 1) model hands hierarchically
+                - 2) dealing cards
+                    - shuffle 
+                        - putting cards in a random order
+                        - array of 52 cards
+                            { face: number, suit: string}
+                        - algorithms
+                            - pick and stick
+                                - pop card from first deck
+                                - place card in random index of second deck
+                                - if index is occupied
+                                    - put it in the next available
+                    - deal
+                    - flop (x3)
+                    - Turn (1)
+                    - River (1)
+                - 3)Implement the betting
